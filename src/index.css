@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* global styles */
+  a,
+  input,
+  button,
+  img,
+  textarea,
+  svg {
+    transition: all 0.4s;
+  }
+  button {
+    cursor: pointer;
+  }
+}
+/* global style classes */
+.product-deal-card {
+  @apply flex flex-col gap-y-20 justify-between py-[18px] xl:px-20 px-4 bg-white;
+  .four-cats {
+    @apply grid grid-cols-2 gap-10;
+  }
+  .category-img {
+    @apply w-[130px] h-[180px] object-contain;
+  }
+  /* .special-card {
+    @apply flex cursor-pointer justify-between [&>div]:rounded-md [&>div]:border-2 [&>div]:border-transparent [&>div:hover]:border-Cyan [&>div]:overflow-hidden [&>div]:p-4;
+  } */
+}
+.grid-three {
+  @apply grid gap-[33px] xl:grid-cols-3 md:grid-cols-2 justify-center;
+}
+/* home page */
+.home-deals-container {
+  @apply w-[95%] mx-auto;
+}
+/* swiper slider Home page */
+.swiper-scrollbar {
+  background: white;
+  border-radius: 10px;
+  height: 6px;
+  bottom: -5px;
+  margin: 20px;
+}
+.swiper-scrollbar-drag {
+  background: #8d8d8d;
+  border-radius: 10px;
+  height: 5px;
+}
+.slider-controls-disabled {
+  @apply [&>button]:bg-white [&>button]:py-10 [&>button]:px-4 [&>button]:rounded-md;
+}

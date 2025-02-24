@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import Style from './Home.module.css'
+import React, { useEffect, useState } from "react";
+import Style from "./Home.module.css";
+import Slider from "./comps/Slider";
+import HomeDealsSection from "./comps/HomeDealsSection";
 export default function Home() {
-    const [counter, setCounter] = useState() 
+  const [counter, setCounter] = useState();
 
-
-    return (
-    <>
-      <h1> Home Component</h1>
-    </>
-  )
+  return (
+    <div className="bg-Gray">
+      <Slider />
+      <HomeDealsSection />
+    </div>
+  );
 }

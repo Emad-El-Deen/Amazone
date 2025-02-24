@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <>
-      <div className= " w-100  ">
+      <div className= " w-100  bg-black">
         <footer className="   bg-success text-center text-white">
           <div className="container p-4 pb-0 ">
             <section className="mb-4">
