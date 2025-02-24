@@ -4,6 +4,7 @@ import Layout from "./Components/Layout/Layout";
 import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
 import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+import Products from ".//Components/Products/Products.jsx"
 export default function App() {
   let router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ export default function App() {
         {
           path: "categories",
           // element: <Categories />,
+        },
+        {
+          path: "products",
+          element: <Products />,
         },
         {
           path: "shippingAddress/:cartId",
