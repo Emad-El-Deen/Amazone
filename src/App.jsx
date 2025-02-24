@@ -3,10 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
-import "./App.css";
 export default function App() {
   let router = createBrowserRouter([
     {

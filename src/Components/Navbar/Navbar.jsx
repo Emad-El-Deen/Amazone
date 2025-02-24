@@ -4,10 +4,10 @@ import { NavLink, useNavigate } from "react-router-dom";
 export default function Navbar() {
   const [counter, setCounter] = useState();
   let navigate = useNavigate();
-  
+
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark text-white-50  bg-success">
+      <nav className="bg-black navbar navbar-expand-lg navbar-dark text-white-50  bg-success">
         <div className="container">
           <NavLink className="  navbar-brand " to="">
             Amazone
@@ -44,7 +44,7 @@ export default function Navbar() {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to={"cart"} className="nav-link" >
+                    <NavLink to={"cart"} className="nav-link">
                       Cart
                     </NavLink>
                   </li>
@@ -64,9 +64,7 @@ export default function Navbar() {
                 </>
               ) : (
                 <div className=" d-flex  justify-content-between ">
-                  <button className="btn nav-link" >
-                    Logout
-                  </button>
+                  <button className="btn nav-link">Logout</button>
                 </div>
               )}
               <li className="py-2 m-1 d-flex ">
