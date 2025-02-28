@@ -1,10 +1,14 @@
-import React from "react";
+import "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
 import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 import Products from ".//Components/Products/Products.jsx"
+import Register from "./Components/Auth/Register.jsx";
+import Login from "./Components/Auth/Login.jsx";
+import { Toaster } from "react-hot-toast";
+import { ToastContainer } from "react-toastify";
 export default function App() {
   let router = createBrowserRouter([
     {
@@ -41,11 +45,11 @@ export default function App() {
         },
         {
           path: "login",
-          // element: <Login />,
+          element: <Login />,
         },
         {
           path: "register",
-          // element: <Register />,
+          element: <Register />,
         },
         { path: "*", element: <NotFound /> },
       ],
@@ -54,6 +58,8 @@ export default function App() {
 
   return (
     <>
+    <ToastContainer />
+    <Toaster />
       <RouterProvider router={router}></RouterProvider>
     </>
   );

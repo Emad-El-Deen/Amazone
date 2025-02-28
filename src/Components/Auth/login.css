@@ -1,0 +1,153 @@
+/* General Reset and Box Model */
+
+
+/* Body and Background */
+body {
+ 
+}
+.parent-login{
+  width: 100%;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Card Layout */
+.containerL {
+  margin-top: 76px;
+  margin-right: 1px;  
+}
+.card1 {
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px;
+  width: 540px;
+  height: 400px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 1px 2px 15px 1px rgb(99, 96, 95);
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Header */
+.logintitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-head .logintitle {
+  font-size: 40px;
+  color:orangered;
+ 
+  font-weight: bold;
+}
+.card-bodyE{
+  margin-top: 30px;
+}
+/* Form Inputs */
+.groups {
+  margin-top: 10px;
+ position: relative;
+}
+
+.Finput {
+  width: 100%;
+  padding: 12px 40px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  outline: none;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  
+}
+.fas{
+  position: absolute;
+  left: 20px;  /* Position icon inside the input field */
+  top: 50%;
+  transform: translateY(-50%);  /* Center the icon vertically */
+  color: rgb(90, 89, 89);  /* Set icon color */
+}
+
+.Finput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%; /* Adjust the button width */
+  max-width: 400px; /* Set a max width */
+  padding: 12px;
+  background-color: orangered;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: cursive;
+  margin-bottom: 20px; /* Adjust the space between the button and the link */
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Link to Register */
+.btn-link {
+  text-decoration: none;
+  color: rgb(43, 43, 44);
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  margin-top: -11px;  /* Add some space between the button and the link */
+}
+
+
+.btn-link:hover {
+  color: #0056b3;
+}
+.card-end {
+  display: flex;
+  flex-direction: column;  /* Stack the button and link vertically */
+  align-items: center;  /* Center align items horizontally */
+}
+.iconL{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    margin-top:-10px;
+    left: 155px;
+    cursor: pointer;
+    position: absolute;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+
+  .card-head h2 {
+    font-size: 20px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+  }
+
+  .btn-link {
+    font-size: 12px;
+  }
+}

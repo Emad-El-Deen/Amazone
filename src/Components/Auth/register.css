@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.parent-regster{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent-reg{
+    border-radius: 15px;
+    height: 450px;
+    width: 600px;
+    
+}
+
+.parent-regster input{
+    width: 80%;
+}
+.card_head {
+    display: flex;          
+    align-items: center;     
+    justify-content: center; 
+    padding: 10px;            
+  }
+  
+  .Ftitle{
+    color: orangered;
+    font-weight: 700;
+    text-shadow: 2px 2px 1px gray;
+    padding: 17px 0;
+    margin: 0;   
+    font-size: 40px;             
+    text-align: left;         
+  }
+  .cart-icon {
+    font-size: 30px;          /* Size of the shopping cart icon */
+    cursor: pointer;          /* Optional: Add a pointer cursor on hover */
+    margin-left: 10px; 
+    color: orange;        /* Space between the header and the icon */
+  }
+  
+.card_parent {
+    height: 570px;
+    box-shadow: 1px 2px 15px 1px rgb(99, 96, 95);
+    border-radius: 17px;
+}
+
+.input1 {
+    border-radius: 10px !important;
+    padding:6px;
+    width: 100%;
+    font-size: 10px;
+}
+.fields{
+    border-radius: 10px !important;
+    font-size: 10px;
+}
+.form-controlN {
+    font-size: 13px;
+    font-family: cursive;
+}
+.gender{
+    padding-left: 10px;
+}
+.form-group label {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.signup {
+    background-color: orangered;
+    border: 1px solid rgb(211, 189, 189);
+    margin-left: 12rem;
+    font-size: 20px;
+    color: white !important;
+    width: 130px;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.signup:hover {
+    background-color:rgb(116, 38, 10) !important;
+    color:black !important ;
+    text-shadow: 4px 6px 5px black;
+    opacity: 0.5;
+}
+
+#email {
+    outline: none !important;
+}
+
+.account {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 1rem;
+
+}
+a{
+    font-size: 15px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    margin-top: -40px;
+    cursor: pointer;
+}
+
+.face{
+    color: blue;
+}
+.face:hover{
+    color: rgb(35, 3, 94);
+    transition: 1s
+
+}
+.google{
+    color: red;
+}
+.google:hover{
+    color: rgb(82, 2, 2);
+    transition: 1s
+
+}
+.twitter{
+    color: rgb(3, 3, 58);
+   
+
+}
+.twitter:hover{
+    color: blue;
+    transition: 1s
+
+}
+.whatsapp{
+    color: #25D366;
+}
+.whatsapp:hover{
+    color: #033b18;
+    transition: 1s
+
+}
+
+/*////////////////////////////////*/
